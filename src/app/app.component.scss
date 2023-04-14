@@ -1,0 +1,70 @@
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: darkblue;
+}
+.input-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+}
+    label{
+    font-weight: bold;
+}
+.input-container input{
+    margin-top: 20px;
+    padding: 10px;
+    width: 90%;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.btn-generate-qrcode{
+    background-color: blue;
+    color: white;
+    margin: 20px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding:15px 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+}
+#imgBox{
+        max-height: 0;
+        overflow: hidden;
+        border-radius: 5px;
+        width: 200px;
+        transform: 0.5s;
+}
+#imgBox img{
+    width: 100%;
+    padding: 10px;
+}
+#imgBox.show-img{
+    max-height: 300px;
+}
+.error{
+    animation: shake 0.1s linear 10;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-2px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(2px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
